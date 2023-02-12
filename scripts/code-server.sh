@@ -2,4 +2,4 @@
 
 set -x
 
-/usr/bin/code-server --config /home/code-server/config.yaml
+/usr/bin/code-server --config /home/code-server/config.yaml "$PWD"
