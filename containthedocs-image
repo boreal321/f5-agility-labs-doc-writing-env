@@ -1,1 +1,1 @@
-: ${DOC_IMG:=wetspark/combo-ctd:amd64}
+: ${DOC_IMG:=combo-ctd}
