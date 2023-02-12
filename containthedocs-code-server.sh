@@ -5,8 +5,9 @@ set -x
 
 COMMAND="scripts/code-server.sh"
 DOCKER_RUN_ARGS="--name code-server -p 3000:8080"
+ARCH=`uname -m`
 
-. ./containthedocs-image
+. ./containthedocs-image-$ARCH
 
 exec docker run --rm -it \
   -v "$PWD":"$PWD" --workdir "$PWD" \
